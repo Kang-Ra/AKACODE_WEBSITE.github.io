@@ -143,6 +143,10 @@ section div h1 span {
   .hero-content p {
     font-size: 16px;
   }
+
+  .isikonten{
+  height: 100%;
+}
 }
 
 
@@ -178,5 +182,6 @@ section div h1 span {
     display: flex;
   }
 }
+
 
 
