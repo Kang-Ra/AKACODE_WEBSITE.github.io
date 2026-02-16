@@ -234,21 +234,23 @@ div.service-icon {
 
 /* HP */
 @media (max-width: 600px){
-  
-  .container {
+
+ .container {
     margin-top: 1rem;
     margin-bottom: -2rem;
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    margin-left: 3rem;
   }
 
-    .service-card{
-    min-width: 350px;
-    max-width: 220px;
-    padding: 10px;
+   section  .container .service-card{
+    min-width: 12rem;
+    max-width: 15px;
+    width: 20px;
+    align-items: center;
   }
-
+    
   .services-head h2{
     font-size: 28px;
   }
@@ -280,3 +282,4 @@ div.service-icon {
   width: 280px;
   margin: 0; /* penting, jangan pakai margin besar */
 }
+
