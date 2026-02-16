@@ -92,8 +92,10 @@ body {
 .container {
   max-width: 1100px;
   margin: auto;
+  padding: 0 !important;
+  box-sizing: border-box;
 }
-
+    
 .services-head {
   text-align: center;
   margin-bottom: 35px;
@@ -282,4 +284,5 @@ div.service-icon {
   width: 280px;
   margin: 0; /* penting, jangan pakai margin besar */
 }
+
 
