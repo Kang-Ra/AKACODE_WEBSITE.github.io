@@ -1,0 +1,244 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(76, 75, 75)
+}
+
+/* Navbar utama */
+.navbar {
+  background: rgb(58, 58, 58);
+  width: 100%;
+  padding: 15px 0 ;
+  position: sticky;
+  top: 0;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position:relative;
+  z-index: 9999;
+}
+
+/* Logo */
+.logo {
+  color: yellowgreen;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Menu Desktop */
+.nav-menu {
+  display: flex;
+  gap: 60px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.nav-menu a:hover {
+  color: yellowgreen;
+  background-color: #464747;
+  border-radius: 5px;
+}
+
+/* Checkbox disembunyikan */
+.menu-toggle {
+  display: none;
+  position: relative;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+.order-form-container{
+  max-width:500px;
+  margin:40px auto;
+  padding:30px;
+  background:#ffffff;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  font-family:Arial, sans-serif;
+  border: 3px solid yellowgreen;
+
+}
+
+.order-form-container h2{
+  text-align:center;
+  color: yellowgreen;
+  margin-bottom:20px;
+}
+
+.order-form-container label{
+  display:block;
+  margin-bottom:6px;
+  font-weight:600;
+}
+
+.order-form-container input,
+.order-form-container select,
+.order-form-container textarea{
+  width:100%;
+  padding:10px;
+  margin-bottom:15px;
+  border:1px solid #ccc;
+  border-radius:8px;
+  font-size:14px;
+  box-sizing:border-box;
+}
+
+.order-form-container textarea{
+  resize:vertical;
+}
+
+.order-form-container .btn-kirim{
+  width:100%;
+  padding: 12px 2px;
+  background: yellowgreen;
+  color:white;
+  border:none;
+  border-radius:10px;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.order-form-container .btn-kirim:hover{
+  background: #20ad27;
+}
+
+
+/* BOX SUCCESS AWALNYA DISHIDE */
+.success-box{
+  display: none;
+  text-align: center;
+  background-color: yellowgreen;
+  width: 30%;
+  margin-top: 10%;
+  margin-left: 30%;
+  padding: 5%;
+  border-radius: 7%;
+}
+
+.success-box .btn-back:hover{
+  background-color: rgb(64, 61, 61);
+}
+
+/* SAAT FORM DIKIRIM -> MUNCUL SUCCESS */
+#sukses:target{
+  display: block ;
+}
+
+/* SAAT SUCCESS MUNCUL -> FORM HILANG */
+#sukses:target~#order-container{
+  display: none;
+}
+
+.success-box p{
+  margin-top: 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+.btn-back{
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: #222;
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsif untuk layar kecil */
+@media(max-width:600px){
+  .order-form-container{
+    padding:20px;
+    margin:20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Hamburger muncul */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Menu jadi turun */
+  .nav-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: rgb(85, 84, 84);
+    display: none;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-menu a {
+    padding: 15px 20px;
+    border-top: 1px solid #222;
+  }
+
+  /* Kalau checkbox dicentang => menu tampil */
+  .menu-toggle:checked ~ .nav-menu {
+    display: flex;
+  }
+}
+
+/* RESPONSIF HP */
+@media (max-width: 600px){
+  .success-box{
+    margin: 40px 20px;
+    padding: 18px;
+    border-radius: 14px;
+    width: auto;
+    height: 150px;
+  }
+
+  .success-box h2{
+    font-size: 18px;
+  }
+
+  .success-box p{
+    font-size: 14px;
+  }
+
+  .success-box .btn-back{
+    width: 100%;
+    padding:5px;
+    margin-top: 10%;
+  }
+}

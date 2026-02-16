@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    
+<header class="navbar">
+  <div class="nav-container">
+
+    <!-- Logo -->
+    <a href="#" class="logo">AKACODE</a>
+
+    <!-- Toggle checkbox (untuk hamburger) -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+    <!-- Icon hamburger -->
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!-- Menu -->
+    <nav class="nav-menu">
+      <a href="Home.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    </header>
+    
+<section class="contact" id="contact">
+  <div class="contact-container">
+
+    <div class="contact-header">
+      <h2>Contact Us</h2>
+      <p>Butuh website? Kirim pesan sekarang, kami balas secepat mungkin.</p>
+    </div>
+
+<!-- BOX TERIMAKASIH (SETELAH KIRIM PESAN) -->
+<div class="thanks-box" id="thanks">
+  <h2>✅ Pesan Berhasil Dikirim</h2>
+  <p>Terimakasih! Pesan Anda akan segera kami respons.</p>
+
+  <a href="#contact" class="btn-back">Kembali</a>
+</div>
+
+    <div class="contact-grid" id="contact-grid">
+      <!-- Kiri: Info -->
+      <div class="contact-info">
+        <h3>Info Kontak</h3>
+        <p>Hubungi kami untuk konsultasi gratis dan penawaran terbaik.</p>
+
+        <div class="info-box">
+          <span class="label">📍 Alamat</span>
+          <span class="value">Indonesia</span>
+        </div>
+
+        <div class="info-box">
+          <span class="label">📞 WhatsApp</span>
+          <span class="value">+62 838-0114-6035</span>
+        </div>
+
+        <div class="info-box">
+          <span class="label">✉️ Email</span>
+          <span class="value">belitungrakha12@gmail.com</span>
+        </div>
+
+        <a href="https://wa.me/6283801146035" target="_blank" class="btn-wa">
+          Chat via WhatsApp
+        </a>
+      </div>
+
+      <!-- Kanan: Form -->
+      <form action = "#thanks" class ="contact-form" id="contact-form" method="get">
+       <div class="judullogo">
+        <h3>Kirim Pesan</h3>
+        <img src="AKACODE.png" alt="Logo-AKACODE">
+        </div>
+
+        <div class="input-group">
+          <label>Nama</label>
+          <input type="text" placeholder="Masukkan nama" required>
+        </div>
+
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" placeholder="Masukkan email" required>
+        </div>
+
+        <div class="input-group">
+          <label>Pesan</label>
+          <textarea placeholder="Tulis pesan..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Kirim Pesan</button>
+      </form>
+</section>
+</body>
+</html>

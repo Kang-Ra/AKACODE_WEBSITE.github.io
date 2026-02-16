@@ -1,0 +1,181 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+/* Navbar utama */
+.navbar {
+  background: rgb(58, 58, 58);
+  width: 100%;
+  padding: 15px 0;
+  position: sticky;
+  top :0;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  color: yellowgreen;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Menu Desktop */
+.nav-menu {
+  display: flex;
+  gap: 60px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.nav-menu a:hover {
+  color: yellowgreen;
+  background-color: #464747;
+  border-radius: 5px;
+}
+
+/* Checkbox disembunyikan */
+.menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+.isikonten {
+  width: 100%;
+  height: 32.3rem;
+  padding: 80px 20px;
+  background: rgb(76, 75, 75);
+  color: white;
+  text-align: center;
+  background: url(background.jpeg);
+}
+
+.isi-konten {
+  max-width: 900px;
+  margin: auto;
+  padding-top: 4%;
+}
+
+.isi-konten h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+section div h1 span {
+  color : yellowgreen;
+}
+
+.isi-konten p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #dcdcdc;
+  margin-bottom: 30px;
+}
+
+.kunjungi-btn {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn.primary {
+  background: yellowgreen;
+  color: #111;
+}
+
+.btn.primary:hover {
+  background: rgb(62, 229, 70);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+}
+
+
+/* ========================= */
+/* RESPONSIVE (MOBILE) */
+/* ========================= */
+@media (max-width: 768px) {
+
+  /* Hamburger muncul */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Menu jadi turun */
+  .nav-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: rgb(85, 84, 84);
+    display: none;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-menu a {
+    padding: 15px 20px;
+    border-top: 1px solid #222;
+  }
+
+  /* Kalau checkbox dicentang => menu tampil */
+  .menu-toggle:checked ~ .nav-menu {
+    display: flex;
+  }
+}

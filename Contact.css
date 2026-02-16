@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar utama */
+.navbar {
+  background: rgb(58, 58, 58);
+  width: 100%;
+  padding: 15px 0;
+  position: sticky;
+  top : 0;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  color: yellowgreen;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Menu Desktop */
+.nav-menu {
+  display: flex;
+  gap: 60px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.nav-menu a:hover {
+  color: yellowgreen;
+  background-color: #464747;
+  border-radius: 5px;
+}
+
+/* Checkbox disembunyikan */
+.menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+
+  /* Hamburger muncul */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Menu jadi turun */
+  .nav-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: rgb(85, 84, 84);
+    display: none;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-menu a {
+    padding: 15px 20px;
+    border-top: 1px solid #222;
+  }
+
+  /* Kalau checkbox dicentang => menu tampil */
+  .menu-toggle:checked ~ .nav-menu {
+    display: flex;
+  }
+}
+
+.contact{
+  padding: 90px 20px;
+  background-color: #464747;
+  color: #fff;
+}
+
+.contact-container{
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-header{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-header h2{
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-header p{
+  color: #cbd5e1;
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Grid */
+.contact-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* Info Box */
+.contact-info{
+  background: whitesmoke;
+  padding: 30px;
+  border-radius: 16px;
+  border: solid 3px rgb(107, 145, 31);
+}
+
+.contact-info h3{
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.contact-info p{
+  color:#383939;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.info-box{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.04);
+  margin-bottom: 12px;
+}
+
+.info-box .label{
+  font-size: 14px;
+  color :black;
+}
+
+.info-box .value{
+  font-size: 16px;
+  font-weight: 600;
+  color:#383939;
+}
+
+/* Button WA */
+.btn-wa{
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background-color: yellowgreen;
+  color: #0b1220;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-wa:hover{
+  transform: translateY(-3px);
+  background-color: #0ed958;
+}
+
+/* Form */
+.contact-form{
+  background: rgb(115, 167, 13);
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.judullogo {
+    display: flex;
+    gap : -1rem;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: -40px;
+    margin-top: -80px;
+}
+
+form div img {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 10px;
+}
+
+.contact-form h3{
+  display: flex;
+    font-size: 22px;
+  width : 200px;
+  margin-left: -4%;
+}
+
+.input-group{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.input-group label{
+  font-size: 14px;
+  color: #333232;
+}
+
+.input-group input,
+.input-group textarea{
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: whitesmoke;
+  color: #333232;
+  outline: none;
+  font-size: 15px;
+}
+
+.input-group textarea{
+  min-height: 130px;
+  resize: none;
+}
+
+.btn-submit{
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: rgb(21, 173, 21);
+  color: whitesmoke;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  z-index: 999;
+}
+
+.btn-submit:hover{
+  transform: translateY(-3px);
+  background-color: green;
+}
+
+.thanks-box{
+  display: none !important;
+  width: 100%;
+  max-width: 550px;
+  margin: 30px auto;
+  padding: 28px;
+  border-radius: 18px;
+  background: white;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  font-family: Arial, sans-serif;
+}
+
+.thanks-box h2{
+  font-size: 22px;
+  margin-bottom: 10px;
+  color :#333;
+}
+
+.thanks-box p{
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* TOMBOL KEMBALI */
+.btn-back{
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: yellowgreen;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn-back:hover {
+  background-color: green;
+}
+
+.thanks-box{
+  display: none;
+}
+
+#thanks:target{
+  display: block !important;
+}
+
+#thanks:target ~ #contact-grid{
+  display: none !important;
+}
+
+
+/* RESPONSIF HP */
+@media (max-width: 576px){
+  .contact-form, .thanks-box{
+    margin: 20px 12px;
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+.thanks-box {
+  width: 80%;
+  margin-left:5%;
+}
+
+  .thanks-box h2, .contact-form h2{
+    font-size: 18px;
+  }
+
+  .thanks-box p{
+    font-size: 14px;
+  }
+
+  .btn-back{
+    width: 80%;
+    text-align: center;
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .contact-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .contact-header h2{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 899px){
+  .contact-form h3{
+  display: flex;
+    font-size: 22px;
+  width : 200px;
+  margin-left: 1%;
+}
+
+ .contact-form {
+    padding-top: 15%;
+    padding-right:10% ;
+ }
+}

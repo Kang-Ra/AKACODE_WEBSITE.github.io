@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(76, 75, 75);
+}
+
+/* Navbar utama */
+.navbar {
+  background: rgb(58, 58, 58);
+  width: 100%;
+  padding: 15px 0;
+  position: sticky;
+  top :0;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  color: yellowgreen;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Menu Desktop */
+.nav-menu {
+  display: flex;
+  gap: 60px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.nav-menu a:hover {
+  color: yellowgreen;
+  background-color: #464747;
+  border-radius: 5px;
+}
+
+/* Checkbox disembunyikan */
+.menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+.about {
+  padding: 80px 20px;
+  background: rgb(76, 75, 75);
+  color: #fff;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:40px;
+  align-items: center;
+}
+
+/* Gambar */
+.about-image img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  margin-top : -1rem;
+  background-color: rgb(99, 139, 20);
+}
+
+/* Konten */
+.about-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.about-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin-bottom: 25px;
+}
+
+.about-content .about-desc span{
+    color : yellowgreen;
+}
+
+/* List */
+.about-list {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.about-item {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-item h4 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.about-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+/* Button */
+.about-btn {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: yellowgreen;
+  color: #0f172a;
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: rgb(4, 164, 4);
+}
+
+.btn-outline {
+  border: 2px solid yellowgreen;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: rgb(23, 176, 9);
+  color: #0f172a;
+}
+
+@media (max-width: 768px) {
+
+  /* Hamburger muncul */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Menu jadi turun */
+  .nav-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: rgb(85, 84, 84);
+    display: none;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-menu a {
+    padding: 15px 20px;
+    border-top: 1px solid #222;
+  }
+
+  /* Kalau checkbox dicentang => menu tampil */
+  .menu-toggle:checked ~ .nav-menu {
+    display: flex;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+}
