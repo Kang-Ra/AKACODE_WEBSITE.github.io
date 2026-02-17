@@ -136,6 +136,10 @@ section div h1 span {
 
 /* Responsive */
 @media (max-width: 768px) {
+ body {
+  background-color: rgb(76, 75, 75);
+}
+
   .hero-content h1 {
     font-size: 28px;
   }
@@ -182,6 +186,7 @@ section div h1 span {
     display: flex;
   }
 }
+
 
 
 
