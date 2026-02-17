@@ -111,7 +111,7 @@ body {
 
 .contact{
   padding: 90px 20px;
-  background-color: #464747;
+  background: rgb(76, 75, 75);
   color: #fff;
 }
 
@@ -399,6 +399,7 @@ form div img {
     padding-right:10% ;
  }
 }
+
 
 
 
