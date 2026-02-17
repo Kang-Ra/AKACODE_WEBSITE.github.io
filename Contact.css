@@ -206,7 +206,7 @@ body {
 
 /* Form */
 .contact-form{
-  background: rgb(115, 167, 13);
+  background: green;
   padding: 30px;
   border-radius: 16px;
   border: 1px solid rgba(255,255,255,0.08);
@@ -268,7 +268,7 @@ form div img {
   padding: 12px;
   border: none;
   border-radius: 12px;
-  background: rgb(21, 173, 21);
+  background: yellowgreen;
   color: whitesmoke;
   font-weight: 800;
   cursor: pointer;
@@ -279,7 +279,7 @@ form div img {
 
 .btn-submit:hover{
   transform: translateY(-3px);
-  background-color: green;
+  background-color: rgb(12, 69, 12);
 }
 
 .thanks-box{
@@ -399,3 +399,4 @@ form div img {
     padding-right:10% ;
  }
 }
+
