@@ -80,8 +80,7 @@ body {
 }
 
 .services {
-  padding-top: 10% ;
-  padding-left:8%;
+  padding : 20px 10px;
   background: rgb(76, 75, 75);
   color: #fff;
   font-family: Arial, sans-serif;
@@ -240,7 +239,8 @@ div.service-icon {
 @media (max-width: 600px){
 
 .services {
-  margin-bottom: 2rem;
+  margin-top : 1rem;
+    margin-bottom : 1rem
 }
     
  .container {
@@ -290,6 +290,7 @@ div.service-icon {
   width: 280px;
   margin: 0; /* penting, jangan pakai margin besar */
 }
+
 
 
 
