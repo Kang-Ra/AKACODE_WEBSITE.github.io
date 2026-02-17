@@ -9,6 +9,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   width: 100%;
+  background: rgb(76, 75, 75);
 }
 
 /* Navbar utama */
@@ -398,5 +399,6 @@ form div img {
     padding-right:10% ;
  }
 }
+
 
 
