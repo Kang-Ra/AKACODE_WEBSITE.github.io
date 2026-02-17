@@ -1,6 +1,14 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0 ;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Navbar utama */
@@ -141,7 +149,8 @@
   background: whitesmoke;
   padding: 30px;
   border-radius: 16px;
-  border: solid 3px rgb(107, 145, 31);
+  border: solid 3px rgb(107, 145, 31)
+  
 }
 
 .contact-info h3{
@@ -328,16 +337,28 @@ form div img {
 
 
 /* RESPONSIF HP */
-@media (max-width: 576px){
-  .contact-form, .thanks-box{
-    margin: 20px 12px;
-    padding: 18px;
-    border-radius: 14px;
+@media (max-width: 600px){
+
+  .contact-form, 
+  .contact-info {
+    width: 100%; /* Gunakan 100% agar nyaman di jempol pengguna HP */
+    margin: 10px 0;
+    padding: 20px;
   }
+
+  .contact-grid {
+    display: flex;
+    flex-direction: column; /* Tumpuk ke bawah */
+  }
+
 
 .thanks-box {
   width: 80%;
   margin-left:5%;
+}
+
+.contact-container{
+  padding-top: 0px;
 }
 
   .thanks-box h2, .contact-form h2{
