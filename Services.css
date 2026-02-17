@@ -80,7 +80,7 @@ body {
 }
 
 .services {
-  padding : 20px 10px;
+  padding : 20px;
   background: rgb(76, 75, 75);
   color: #fff;
   font-family: Arial, sans-serif;
@@ -238,18 +238,13 @@ div.service-icon {
 /* HP */
 @media (max-width: 600px){
 
-.services {
-  margin-top : 1rem;
-    margin-bottom : 1rem
-}
-    
  .container {
-    margin-top: 1rem;
+      margin-top: 1rem;
     margin-bottom: -2rem;
+     display: flex;
     flex-direction: column;
-    justify-items: center;
+    overflow-x: hidden;
     align-items: center;
-    margin-left: 3rem;
   }
 
    section  .container .service-card{
@@ -290,6 +285,7 @@ div.service-icon {
   width: 280px;
   margin: 0; /* penting, jangan pakai margin besar */
 }
+
 
 
 
