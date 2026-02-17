@@ -11,7 +11,7 @@ body {
 .navbar {
   background: rgb(58, 58, 58);
   width: 100%;
-  padding: 15px 0 ;
+  padding: 10px 0 ;
   position: sticky;
   z-index: 999999;
   top: 0;
@@ -286,6 +286,7 @@ div.service-icon {
   width: 280px;
   margin: 0; /* penting, jangan pakai margin besar */
 }
+
 
 
 
