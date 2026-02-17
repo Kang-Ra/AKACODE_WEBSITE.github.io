@@ -224,7 +224,6 @@ body {
 form div img {
     width: 200px;
     height: 200px;
-    background-color: green;
     border-radius: 10px;
 }
 
@@ -399,4 +398,5 @@ form div img {
     padding-right:10% ;
  }
 }
+
 
